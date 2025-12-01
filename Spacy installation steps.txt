@@ -1,0 +1,31 @@
+Spacy installation steps 
+
+1. !pip install spacy
+2. import spacy
+3. !python -m spacy download en_core_web_sm  # Small English model
+4. nlp = spacy.load("en_core_web_sm")
+
+
+Installation of Spacy through Anaconda Prompt
+
+1. conda activate my_env 
+2. python --version
+3. conda create --name my_env python=3.12.4
+4. conda activate my_env 
+5. pip install spacy
+6. python -m spacy info
+7. python -m spacy download en_core_web_sm
+
+
+import spacy
+
+# Load the English language model
+nlp = spacy.load("en_core_web_sm")
+
+# Test with a sample text
+doc = nlp("Hello, spaCy is successfully installed!")
+print([token.text for token in doc])
+
+
+
+
